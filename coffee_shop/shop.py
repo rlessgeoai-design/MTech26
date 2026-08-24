@@ -1,4 +1,4 @@
-from  import MENU                                                   # How to use MENU variable from meny.py file??
+from  import MENU                                                   # How to use MENU variable from menu.py file??
 
 
 class CoffeeShop:
