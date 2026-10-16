@@ -1,11 +1,11 @@
 from coffee_shop.shop import CoffeeShop
 
 
-shop =                                                      # How do we initialize an object here?
+shop = CoffeeShop()
 
 print("☕ Welcome to Our Coffee Shop! ☕")
 
-shop.display_menu()                                         # Why am i not storing it in a variable here? Answer here _________________________
+shop.display_menu()
 
 category = input("\nChoose a category: ").lower()
 
@@ -20,6 +20,6 @@ if total is not None:
     print("\n--------------------------")
     print(f"Item     : {item.title()}")
     print(f"Quantity : {quantity}")
-    print("Total    : ₹")                                   # How to print the total here?
+    print(f"Total    : ₹{total}")
     print("--------------------------")
     print("Thank you for your order! 😊")

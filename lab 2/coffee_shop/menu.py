@@ -2,7 +2,7 @@ MENU = {
     "coffee": {
         "espresso": 80,
         "latte": 100,
-        "cappuccino": 
+        "cappuccino": 120
     },
 
     "juices": {
@@ -19,7 +19,7 @@ MENU = {
 
     "soups": {
         "tomato soup": 80,
-        "sweet corn soup": ,
+        "sweet corn soup": 90,
         "manchow soup": 100
     }
 }

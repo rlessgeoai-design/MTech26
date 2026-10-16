@@ -1,10 +1,10 @@
-from  import MENU                                                   # How to use MENU variable from menu.py file??
+from .menu import MENU
 
 
 class CoffeeShop:
 
     def __init__(self):
-        pass                                                        # What variable should i hold here?
+        self.menu = MENU
 
     def display_menu(self):
         print("\n========== MENU ==========")
@@ -15,16 +15,16 @@ class CoffeeShop:
 
     def display_category(self, category):
 
-        if category == "":                                          # Add something here
+        if category == "coffee":
             print("\n--- COFFEE ---")
 
             for item, price in self.menu["coffee"].items():
                 print(f"{item.title()} - ₹{price}")
 
-        elif category == "":                                        # Add something here
+        elif category == "juices":
             print("\n--- JUICES ---")
 
-            for item, price :                                       # How do you iterate over a dictionary to print the available juice items
+            for item, price in self.menu["juices"].items():
                 print(f"{item.title()} - ₹{price}")
 
         elif category == "starters":
@@ -39,11 +39,12 @@ class CoffeeShop:
             for item, price in self.menu["soups"].items():
                 print(f"{item.title()} - ₹{price}")
 
-                                                                    # Do we need an "else" here
+        else:
+            print("Invalid category!")
 
     def order(self, category, item, quantity):
 
-        if category in :                                            # What is to be added to check here?
+        if category in self.menu:
 
             if item in self.menu[category]:
                 price = self.menu[category][item]
